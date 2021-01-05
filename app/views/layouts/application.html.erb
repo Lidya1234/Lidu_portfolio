@@ -4,12 +4,25 @@
     <title>LiduPortfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="portfolio/assets/css/main.css" />
   </head>
 
-  <body>
+  <body class="is-preload">
+
     <%= yield %>
   </body>
+  <section class="footer">
+  	<!-- Scripts -->
+			<script src="portfolio/assets/js/jquery.min.js"></script>
+			<script src="portfolio/assets/js/jquery.scrolly.min.js"></script>
+			<script src="portfolio/assets/js/jquery.scrollex.min.js"></script>
+			<script src="portfolio/assets/js/browser.min.js"></script>
+			<script src="portfolio/assets/js/breakpoints.min.js"></script>
+			<script src="portfolio/assets/js/util.js"></script>
+			<script src="portfolio/assets/js/main.js"></script>
+  </section>
 </html>
