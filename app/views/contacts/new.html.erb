@@ -1,7 +1,4 @@
-
-
-
-		<!-- Header -->
+<!-- Header -->
 			<div id="header">
 
 				<div class="top">
@@ -155,7 +152,7 @@
 							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
 							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
 							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
- <%= form_for(@page, :html => {:multipart => true}) do |f| %>	
+ <%= form_for(@contact, :html => {:multipart => true}) do |f| %>	
  <div class="row">
 									<div class="col-6 col-12-mobile"> <%= f.text_field :name, placeholder: 'Name'%></div>
 									<div class="col-6 col-12-mobile"><%= f.text_field :email, placeholder: 'Email'%></div>
@@ -168,24 +165,7 @@
 									</div>
 								</div>
 							
-                            <%= form_for(@user, :html => {:multipart => true}) do |f| %>
-  <%= f.label :Username %>
-  <%= f.text_field :Username, class: 'form-control', placeholder: 'Enter user name'%>
-    <%= f.label :Fullname %>
-  <%= f.text_field :Fullname, class: 'form-control', placeholder: 'Enter full name'%>
-<fieldset>
-  <%= f.label :Photo, 'Photo' %>
-  <%= f.hidden_field :Photo_cache %>
-  <%= f.file_field :Photo, class: 'form-control'%>
-</fieldset>
-<fieldset>
-  <%= f.label :Coverimage, 'Coverimage' %>
-  <%= f.hidden_field :Coverimage_cache %>
-  <%= f.file_field :Coverimage, class: 'form-control'%>
-</fieldset>
-<br>
-  <%= f.submit 'Sign up', class: 'btn btn-primary' %>
-<% end %>
+                        
 
 						</div>
 					</section>
